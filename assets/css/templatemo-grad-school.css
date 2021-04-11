@@ -8,7 +8,6 @@ https://templatemo.com/tm-557-grad-school
 
 
 @import url(fontawesome.css);
-@import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -21,7 +20,7 @@ a {
 }
 
 a:hover {
-	color: #FC3;
+	color: #F6C237;
     text-decoration: none;
 }
 
@@ -69,8 +68,8 @@ p {
 /* Buttons */
 
 .main-button a {
-    background-color: #ffa000;
-    color: #fff;
+    background-color: #F6C237;
+    color: #000;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -130,7 +129,7 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-      color: #ffa000;
+      color: #F6C237;
   }
   
   @media screen and (min-width: 951px) {
@@ -165,7 +164,7 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: #000;
+    background-color: transparent;
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -187,7 +186,18 @@ a.menu-link { display: none; }
 }
 .main-header .logo a em {
     font-style: normal;
-    color: #ffa000;
+    color: #F6C237;
+}
+
+.main-header .logo img {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+.main-header .logo img em {
+  font-style: normal;
+  color: #F6C237;
 }
 
 .main-menu {
@@ -269,13 +279,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #ffa000;
+    color: #F6C237;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #ffa000;
+    border: 2px solid #F6C237;
 }
 
 @media (max-width: 950px) {
@@ -286,6 +296,114 @@ a.menu-link { display: none; }
   }
 }
 
+.header-class{
+  color: #F6C237;
+  font-weight: bold;
+}
+
+.home-service-links {
+  /* padding-top: 70px; */
+  /* padding-bottom: 70px;
+  padding-left: 3%;
+  padding-right: 3%; */
+}
+
+.earth-glow{
+  display: inline;
+  width: 10%;
+  height: 10%;
+  margin-left: -5%;
+  margin-right: -5%;
+  z-index: -10 !important;
+}
+
+.service-link-text {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 200;
+  margin-right: 50px;
+  color: #000;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  font-style: italic;
+  font-family: 'Londrina Outline', cursive !important;
+}
+
+.service-link-text:hover {
+  -webkit-text-stroke-width: 2px !important;
+}
+.service-link-text:hover {
+  color: #F6C237;
+  -webkit-text-fill-color: #F6C237;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #F6C237;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.cd-headline.type .cd-words-wrapper {
+  font-size: 85px;
+  min-height: 85px;
+}
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 110px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: -1.16px;
+  min-height: 110px;
+}
+
+.cd-headline.type .cd-words-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background-color: #0e7895;
+}
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
 
 /* Slider */
 
@@ -305,6 +423,19 @@ a.menu-link { display: none; }
     z-index: -1;
 }
 
+#bg-below-video{
+  min-width: 100%;
+  /* min-height: 100vh; */
+  max-width: 100%;
+  max-height: 40vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#bg-below-video::-webkit-media-controls {
+  display: none !important;
+}
+
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
@@ -314,7 +445,7 @@ a.menu-link { display: none; }
     background-color: rgba(22,34,57,0.85);
     top: 0;
     left: 0;
-    bottom: 7px;
+    bottom: 0;
     width: 100%;
 }
 
@@ -348,7 +479,7 @@ a.menu-link { display: none; }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #ffa000;
+  color: #F6C237;
   font-weight: 900;
 }
 
@@ -408,7 +539,7 @@ section.features .col-4 {
 }
 
 .features-content:hover {
-    background-color: #ffa000;
+    background-color: #F6C237;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -487,10 +618,11 @@ section.features .col-4 {
 
 
 
-/* Why Choosing Us */
+/* Why black Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
+    /* background-image: url(../images/black-bg.jpg); */
+    background-image: url(../images/black-bg.jpg);
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,15 +697,15 @@ section.why-us {
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #ffa000;
+  color: #F6C237;
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #ffa000;
+  background-color: #F6C237;
   width: 15px;
   height: 15px;
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #ffa000;
+  border-color: #F6C237;
 }
 #tabs h4 {
     margin-top: 60px;
@@ -642,7 +774,7 @@ section.coming-soon .continer h4 {
 }
 section.coming-soon .continer h4 em {
     font-style: normal;
-    color: #ffa000;
+    color: #F6C237;
 }
 
 @media screen and (max-width: 767px) {
@@ -705,7 +837,7 @@ section.coming-soon .continer .counter .seconds .value {
 section.coming-soon .continer .counter span {
     font-size: 18px;
     text-transform: uppercase;
-    color: #ffa000;
+    color: #F6C237;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 0px;
@@ -777,7 +909,7 @@ section.coming-soon form input::placeholder { color: #fff; }
 
 section.coming-soon form button {
     margin-top: 10px;
-    background-color: #ffa000;
+    background-color: #F6C237;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -795,7 +927,7 @@ section.coming-soon form button {
 /* Courses */
 
 section.courses {
-    background-image: url(../images/choosing-bg.jpg);
+    background-image: url(../images/black-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -831,7 +963,7 @@ section.courses .item .down-content p {
 
 section.courses .item .down-content img {
     width: 40px;
-    border: 2px solid #ffa000;
+    border: 2px solid #F6C237;
     border-radius: 50%;
     text-align: left;
     display: inline-block;
@@ -844,7 +976,7 @@ section.courses .item .down-content .text-button-pay {
 }
 
 section.courses .item .down-content .text-button-pay a {
-    color: #ffa000;
+    color: #F6C237;
     font-size: 13px;
 }
 
@@ -875,7 +1007,7 @@ section.courses .owl-carousel button.owl-dot {
     outline: none;
 }
 section.courses .owl-carousel button.active {
-    background-color: #ffa000;
+    background-color: #F6C237;
 }
 
 
@@ -913,7 +1045,7 @@ section.video .left-content h4 {
 }
 section.video .left-content h4 em {
     font-style: normal;
-    color: #ffa000;
+    color: #F6C237;
 }
 
 section.video .left-content .main-button {
@@ -958,7 +1090,7 @@ section.video .left-content .main-button {
   margin-top: -32.5px;
   margin-left: -32.5px;
   border-radius: 50%;
-  background-color: #ffa000;
+  background-color: #F6C237;
   z-index: 10;
 }
 .video-item figure a:after {
@@ -974,7 +1106,7 @@ section.video .left-content .main-button {
   z-index: 10;
 }
 .video-item figure a:hover:before {
-  background-color: #ffa000;
+  background-color: #F6C237;
 }
 
 .video-item .video-caption {
@@ -1446,7 +1578,7 @@ img.mfp-img {
 /* Contact */
 
 section.contact {
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(../images/black-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -1513,7 +1645,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #ffa000;
+    background-color: #F6C237;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1529,7 +1661,7 @@ section.contact form button {
 /* Footer */
 
 footer {
-    background-color: #152036;
+    background-color: #F6C237;
     text-align: center;
 }
 
@@ -1545,7 +1677,7 @@ footer p {
 
 footer p a,
 footer p a:hover {
-    color: #ffa000;
+    color: #F6C237;
 }
 
 @media screen and (max-width: 992px) {
