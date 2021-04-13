@@ -164,7 +164,7 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: transparent;
+    background-color: black;
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -309,12 +309,11 @@ a.menu-link { display: none; }
 }
 
 .earth-glow{
-  display: inline;
-  width: 10%;
-  height: 10%;
-  margin-left: -5%;
-  margin-right: -5%;
-  z-index: -10 !important;
+  position: absolute;
+  top: -120%;
+  left: -5%;
+  max-width: 500px;
+  max-height: 300px; 
 }
 
 .service-link-text {
