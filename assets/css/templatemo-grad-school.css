@@ -327,7 +327,7 @@ a.menu-link { display: none; }
   font-size: 70px;
   line-height: 70px;
   font-weight: 200;
-  /* margin-right: 2%; */
+  margin-right: 2%;
   color: #000;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
@@ -342,10 +342,37 @@ a.menu-link { display: none; }
 .service-link-text:hover {
   color: #F6C237;
   -webkit-text-fill-color: #F6C237;
-  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #F6C237;
   cursor: pointer;
-  font-weight: 900;
+  font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  .service-link-text {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 200;
+    /* margin-right: 2%; */
+    color: #000;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-style: italic;
+    font-family: 'Londrina Outline', cursive !important;
+  }
+  
+  .service-link-text:hover {
+    -webkit-text-stroke-width: 2px !important;
+  }
+  .service-link-text:hover {
+    color: #F6C237;
+    -webkit-text-fill-color: #F6C237;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #F6C237;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
 }
 
 .cd-headline.type .cd-words-wrapper {
