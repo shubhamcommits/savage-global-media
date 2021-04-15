@@ -454,6 +454,7 @@ a.menu-link { display: none; }
     max-height: 100vh;
     object-fit: cover;
     z-index: -1;
+    margin-bottom: -10px;
 }
 
 #bg-below-video{
